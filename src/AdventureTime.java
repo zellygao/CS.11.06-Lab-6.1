@@ -77,16 +77,32 @@ public class AdventureTime {
     /** This method will read the values in inputFilename into an array of integers, which it will return.
      * Do not edit this method.
      */
-    private static int[] readFile(String inputFilename, int numberOfElements) throws FileNotFoundException {
+    private static int[] readFile(String inputFilename) throws FileNotFoundException {
         File file = new File(inputFilename);
         Scanner scanner = new Scanner(file);
-        int[] data = new int[numberOfElements];
+        int numberOfLinesInFile = countLinesInFile(inputFilename);
+        int[] data = new int[numberOfLinesInFile];
         int index = 0;
-        while (scanner.hasNext()) {
+        while (scanner.hasNextLine()) {
             data[index++] = scanner.nextInt();
         }
         scanner.close();
         return data;
+    }
+
+    /** This method will count the number of lines in a text file, which it will return.
+     * Do not edit this method.
+     */
+    private static int countLinesInFile(String inputFilename) throws FileNotFoundException {
+        File file = new File(inputFilename);
+        Scanner scanner = new Scanner(file);
+        int lineCount = 0;
+        while (scanner.hasNextLine()) {
+            lineCount++;
+            scanner.nextLine();
+        }
+        scanner.close();
+        return lineCount;
     }
 
 }
