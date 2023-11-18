@@ -1,8 +1,5 @@
 # CS.11.06-Lab-6.1
 
-**Adventure Time**
-
-
 **Objectives**
 
 Create a class in an IDE (IntelliJ)
