@@ -116,7 +116,7 @@ To do this, count the number of times a depth measurement increases from the pre
 
 In this example, there are seven measurements that are larger than the previous measurement.
 
-Using the **input.txt** file, write a method called **challengeOne** that takes a parameter (the name of the input text file) and writes the solution to another text file (output.txt) to answer the following question and help Brooke avoid detection from Amboise:
+Using the **inputOneTwo.txt** file, write a method called **challengeOne** that takes a parameter (the name of the input text file) and writes the solution to another text file (output.txt) to answer the following question and help Brooke avoid detection from Amboise:
 
 How many measurements are larger than the previous measurement? 
 
@@ -171,7 +171,7 @@ H: 792 (increased)
 
 In this example, there are 5 sums that are larger than the previous sum.
 
-Using the input.txt file, write a method called challengeTwo that has a parameter (the name of the file) and writes the solution to another text file (outputTwo.txt) to answer the following question and continue to help Brooke avoid detection from Amboise:
+Using the **inputOneTwo.txt** file, write a method called **challengeTwo** that has a parameter (the name of the file) and writes the solution to another text file (outputTwo.txt) to answer the following question and continue to help Brooke avoid detection from Amboise:
 
 Consider sums of a three-measurement sliding window. How many sums are larger than the previous sum?
 
@@ -222,7 +222,7 @@ Her horizontal position and depth both start at 0. The steps above would then mo
 
 After following these instructions, she would have a horizontal position of 15 and a depth of 10. (Multiplying these together produces 150.)
 
-Calculate the horizontal position and depth Brooke would have after following the planned course. What do you get if you multiply Brooke’s final horizontal position by her final depth?
+Using the **inputThreeFour.txt** file, write a method called **challengeThree** that calculates the horizontal position and depth Brooke would have after following the planned course. What do you get if you multiply Brooke’s final horizontal position by her final depth?
 
 Answer 	__________________
 
@@ -273,6 +273,6 @@ Now, the above example does something different:
 
 After following these new instructions, Brooke would have a horizontal position of 15 and a depth of 60. (Multiplying these produces 900.)
 
-Using this new interpretation of the commands, calculate the horizontal position and depth Brooke would have after following the planned course. What do you get if you multiply her final horizontal position by her final depth?
+Using the **inputThreeFour.txt** file, write a method called **challengeFour** that, using this new interpretation of the commands, calculates the horizontal position and depth Brooke would have after following the planned course. What do you get if you multiply her final horizontal position by her final depth?
 
 Answer 	__________________
