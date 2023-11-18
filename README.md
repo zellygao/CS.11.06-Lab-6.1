@@ -2,34 +2,34 @@
 
 **Objectives**
 
-Create a class in an IDE (IntelliJ)
+* Create a class in an IDE (IntelliJ)
 
-Read from a file
+* Read from a file
 
-Write to a file
+* Write to a file
 
-Write a method that takes a parameter
+* Write a method that takes a parameter
 
-Call a method that takes one or more parameters
+* Call a method that takes one or more parameters
 
-Think programmatically
+* Think programmatically
 
-Have fun
+* Have fun
 
 
 **Materials**
 
 You will be provided with four text files and one java file.
 
-testInputOneTwo.txt
+* testInputOneTwo.txt
 
-inputOneTwo.txt
+* inputOneTwo.txt
 
-testInputThreeFour.text
+* testInputThreeFour.text
 
-inputThreeFour.txt
+* inputThreeFour.txt
 
-AdventureTime.java
+* AdventureTime.java
 
 Two text files (**testInputOneTwo.txt** and **inputOneTwo.txt**) are to be used for **Challenge 1** and **Challenge 2**. The purpose of the **testInputOneTwo.txt** file is to provide you with a smaller amount of data that you can use to more easily test your methods with. When you believe that your method is correct, use the **inputOneTwo.txt** file to get an answer to **Challenge 1** and **Challenge 2**.
 
@@ -39,25 +39,25 @@ Two text files (**testInputThreeFour.txt** and **inputThreeFour.txt**) are to be
 
 Pause. Slowly take a deep breath. In through the nose, hold it for five seconds, then slowly exhale through the mouth. Repeat this three times. Close your eyes if you feel like it. When you have finished, roll your shoulders back three times. Now, slowly and carefully read the following instructions … Sometimes, the most difficult aspect in a problem in computer science is not writing the solution, but understanding what the problem is and how to solve it. 
 
-This lab has **FOUR** challenges. 
+* This lab has **FOUR** challenges. 
 
-There is a single correct answer to each challenge. 
+* There is a single correct answer to each challenge. 
 
-You must write a different method to solve each challenge. 
+* You must write a different method to solve each challenge. 
 
-Your methods will be called challengeOne, challengeTwo, challengeThree, and challengeFour. 
+* Your methods will be called challengeOne, challengeTwo, challengeThree, and challengeFour. 
 
-You must call the method readFile inside each of the methods that you write. Note that in one or two of the four challenges you may need to create a slightly different readFile method. If you need to do so, do not delete the original readFile method. Call the new method readFileTwo. So, in each of the four methods you need to call either readFile or readFileTwo.
+* You must call the method readFile inside each of the methods that you write. Note that in one or two of the four challenges you may need to create a slightly different readFile method. If you need to do so, do not delete the original readFile method. Call the new method readFileTwo. So, in each of the four methods you need to call either readFile or readFileTwo.
 
-Each method that you write must return a value (the answer to the specific challenge).
+* Each method that you write must return a value (the answer to the specific challenge).
 
-Test your methods inside the main method.
+* Test your methods inside the main method.
 
-When testing your methods, store the returned value from the method call into a variable. Name your variable challengeOneAnswer, challengeTwoAnswer, …
+* When testing your methods, store the returned value from the method call into a variable. Name your variable challengeOneAnswer, challengeTwoAnswer, …
 
-Use these variables in a call to writeFileAllAnswers (pass them as arguments) to write all of your solutions to a file called AdventureTime.txt. This call to writeFileAllAnswers must also be inside the main method.
+* Use these variables in a call to writeFileAllAnswers (pass them as arguments) to write all of your solutions to a file called AdventureTime.txt. This call to writeFileAllAnswers must also be inside the main method.
 
-Include all four methods as well as the main method in a single class called AdventureTime.
+* Include all four methods as well as the main method in a single class called AdventureTime.
 
 
 **Challenge 1**
@@ -184,11 +184,11 @@ Now, Brooke needs to figure out how to pilot this thing.
 
 It seems like Brooke’s submarine can take a series of commands like forward 1, down 2, or up 3:
 
-forward X increases the horizontal position by X units.
+* forward X increases the horizontal position by X units.
 
-down X increases the depth by X units.
+* down X increases the depth by X units.
 
-up X decreases the depth by X units.
+* up X decreases the depth by X units.
 
 Note that since she’s on a submarine, down and up affect her depth, and so they have the opposite result of what she might expect.
 
@@ -208,17 +208,17 @@ forward 2
 
 Her horizontal position and depth both start at 0. The steps above would then modify them as follows:
 
-forward 5 adds 5 to her horizontal position, a total of 5.
+* forward 5 adds 5 to her horizontal position, a total of 5.
 
-down 5 adds 5 to her depth, resulting in a value of 5.
+* down 5 adds 5 to her depth, resulting in a value of 5.
 
-forward 8 adds 8 to her horizontal position, a total of 13.
+* forward 8 adds 8 to her horizontal position, a total of 13.
 
-up 3 decreases her depth by 3, resulting in a value of 2.
+* up 3 decreases her depth by 3, resulting in a value of 2.
 
-down 8 adds 8 to her depth, resulting in a value of 10.
+* down 8 adds 8 to her depth, resulting in a value of 10.
 
-forward 2 adds 2 to her horizontal position, a total of 15.
+* forward 2 adds 2 to her horizontal position, a total of 15.
 
 After following these instructions, she would have a horizontal position of 15 and a depth of 10. (Multiplying these together produces 150.)
 
@@ -233,15 +233,15 @@ Based on her calculations, Brooke’s planned course doesn't seem to make any se
 
 In addition to horizontal position and depth, she also needs to track a third value, aim, which also starts at 0. The commands also mean something entirely different than she first thought:
 
-down X increases her aim by X units.
+* down X increases her aim by X units.
 
-up X decreases her aim by X units.
+* up X decreases her aim by X units.
 
-forward X does two things:
+* forward X does two things:
 
-It increases her horizontal position by X units.
+* It increases her horizontal position by X units.
 
-It increases her depth by her aim multiplied by X.
+* It increases her depth by her aim multiplied by X.
 
 Again note that since Brooke’s on a submarine, down and up do the opposite of what she might expect: "down" means aiming in the positive direction.
 
@@ -259,17 +259,17 @@ forward 2
 
 Now, the above example does something different:
 
-forward 5 adds 5 to Brooke’s horizontal position, a total of 5. Because her aim is 0, her depth does not change.
+* forward 5 adds 5 to Brooke’s horizontal position, a total of 5. Because her aim is 0, her depth does not change.
 
-down 5 adds 5 to her aim, resulting in a value of 5.
+* down 5 adds 5 to her aim, resulting in a value of 5.
 
-forward 8 adds 8 to her horizontal position, a total of 13. Because her aim is 5, her depth increases by 8*5=40.
+* forward 8 adds 8 to her horizontal position, a total of 13. Because her aim is 5, her depth increases by 8*5=40.
 
-up 3 decreases her aim by 3, resulting in a value of 2.
+* up 3 decreases her aim by 3, resulting in a value of 2.
 
-down 8 adds 8 to her aim, resulting in a value of 10.
+* down 8 adds 8 to her aim, resulting in a value of 10.
 
-forward 2 adds 2 to her horizontal position, a total of 15. Because her aim is 10, her depth increases by 2*10=20 to a total of 60.
+* forward 2 adds 2 to her horizontal position, a total of 15. Because her aim is 10, her depth increases by 2*10=20 to a total of 60.
 
 After following these new instructions, Brooke would have a horizontal position of 15 and a depth of 60. (Multiplying these produces 900.)
 
