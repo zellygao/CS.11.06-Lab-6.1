@@ -19,7 +19,7 @@ public class AdventureTime {
             int result4 = challengeFour("inputThreeFour.txt");
             System.out.println("Result: " + result4);
             writeFileAllAnswers("Answers", result1, result2, result3, result4);
-        }catch(IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
